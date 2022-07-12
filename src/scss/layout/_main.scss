@@ -1,1 +1,133 @@
 // codigo aquí
+/* NAV */
+
+.menu {
+    height: 7rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: initial;
+    z-index: 100;
+}
+
+.scroll-header {
+    box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu__logo {
+    color: #242329;
+    font-size: 1.5rem;
+    width: 10rem;
+    font-weight: 500;
+    display: flex;
+    height: 60%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu__item {
+    height: 100%;
+}
+
+.menu__btns {
+    display: flex;
+    align-items: center;
+}
+
+.menu__hamburger {
+    display: flex;
+    color: #242329;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.menu__hamburger:hover {
+    color: $mediumGray
+}
+
+.menu__list {
+    position: fixed;
+    max-width: 400px;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    background-color: $almostWhite;
+    margin: 0;
+    padding: 2rem 0 4rem;
+    box-shadow: -1px 0px 5px rgb(0 0 0 / 15%);
+    transition: .4s;
+}
+
+.menu__list {
+    align-items: center;
+}
+
+.menu__link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: #232439;
+    font-size: 1.6rem;
+}
+
+.menu__link:hover {
+    background-color: var(--gris--fondo);
+    border-radius: 0;
+    color: var(--azul-principal);
+}
+
+.menu__icon {
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.menu__close {
+    position: absolute;
+    top: 2.3rem;
+    right: 1.3rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.menu__close:hover {
+    color: var(--azul-principal);
+}
+
+/* Show Menu */
+
+.menu__links--show {
+    right: 0;
+}
+
+/* Active link */
+
+.active-link {
+    color: var(--azul-principal);
+}
+//Main
+main {
+    margin-top: 7rem;
+}
+
+// Footer
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+

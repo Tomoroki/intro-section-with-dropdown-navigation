@@ -1,8 +1,13 @@
-$fuentePrincipal: 'Montserrat', sans-serif;
+$fuentePrincipal: 'Epilogue', sans-serif;
 
 // Colores
 $black: #111111;
 $white: #f9f9f9;
+
+// Neutral
+$almostWhite: hsl(0, 0%, 98%);
+$mediumGray: hsl(0, 0%, 41%);
+$almostBlack: hsl(0, 0%, 8%);
 
 // MediaQueries
 $phone: 480px;
