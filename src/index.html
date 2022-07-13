@@ -18,7 +18,8 @@
     <nav class="menu">
 
         <section class="nav container">
-            <a href="#" id="cerrar" class="menu__logo">Tomoroki</a>
+
+            <img src="./assets/logo.svg" alt="Logo">
 
             <div class="nav__menu">
                 <ul class="menu__list">
@@ -53,26 +54,29 @@
 
             </div>
 
-            <div class="menu__btns">
-                <div class="menu__hamburger">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
+            <div class="menu__hamburger">
+                <img src="./assets/icon-menu.svg" alt="Hamburger Menu">
             </div>
 
         </section>
     </nav>
 
+    <main class="main">
 
+        <picture class="main__hero">
+            <source media="(max-width: 799px)" srcset="./assets/image-hero-mobile.png">
+            <source media="(min-width: 800px)" srcset="./assets/image-hero-desktop.png">
+            <img src="./assets/image-hero-mobile.png" alt="Hero mobile">
+        </picture>
 
-    <main>
-        <h1>Make remote work</h1>
-        <p>
-            Get your team in sync, no matter your location. Streamline processes,
-            create team rituals, and watch productivity soar.
-        </p>
-        <a href="#">
-            Learn more
-        </a>
+        <section class="main__info">
+            <h1>Make remote work</h1>
+            <p>
+                Get your team in sync, no matter your location. Streamline processes,
+                create team rituals, and watch productivity soar.
+            </p>
+            <a href="#">Learn more</a>
+        </section>
     </main>
 
     <footer class="attribution">

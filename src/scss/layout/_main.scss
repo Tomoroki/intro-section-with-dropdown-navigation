@@ -118,8 +118,34 @@
     color: var(--azul-principal);
 }
 //Main
-main {
+.main {
     margin-top: 7rem;
+    .main__hero {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .main__info {
+        width: 90%;
+        margin: 4rem auto;
+        h1 {
+            font-size: 3.4rem;
+            text-align: center;
+        }
+        p {
+            font-size: 1.6rem;
+            text-align: center;
+            color: $mediumGray;
+        }
+        a {
+            background-color: $almostBlack;
+            color: $almostWhite;
+            padding: 1.5rem 2.5rem;
+            border-radius: 1.5rem;
+            margin: 3rem;
+        }
+    }
 }
 
 // Footer

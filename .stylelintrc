@@ -6,7 +6,7 @@
         "declaration-colon-newline-after": "always-multi-line",
         "selector-type-no-unknown": null,
         "property-no-unknown": [
-     R      true,
+            true,
             {
                 "ignoreProperties": [
                     "content-visibility"
