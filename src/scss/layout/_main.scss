@@ -9,6 +9,7 @@
     left: 0;
     bottom: initial;
     z-index: 100;
+    background-color: $almostWhite;
 }
 
 .scroll-header {
@@ -119,7 +120,7 @@
 }
 //Main
 .main {
-    margin-top: 7rem;
+    margin-top: 8rem;
     .main__hero {
         img {
             display: block;
@@ -129,31 +130,48 @@
     .main__info {
         width: 90%;
         margin: 4rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         h1 {
             font-size: 3.4rem;
-            text-align: center;
         }
         p {
             font-size: 1.6rem;
-            text-align: center;
             color: $mediumGray;
+            text-align: center;
+            margin: 2rem 0 2.3rem;
+            line-height: 1.6;
         }
-        a {
+        .main__info--btn {
             background-color: $almostBlack;
             color: $almostWhite;
             padding: 1.5rem 2.5rem;
             border-radius: 1.5rem;
-            margin: 3rem;
+        }
+        .main__info--footer {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 5rem;
+            img {
+                width: 7rem;
+            }
         }
     }
 }
 
 // Footer
 .attribution {
-    font-size: 11px;
+    margin-top: 2rem;
+    font-size: 1.4rem;
     text-align: center;
     a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(242, 100%, 80%);
+        &:hover {
+            color: hsl(242, 100%, 60%);
+        }
     }
 }
 
