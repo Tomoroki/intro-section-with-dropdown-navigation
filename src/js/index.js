@@ -27,3 +27,15 @@
         link.addEventListener('click', linkAction);
     });
 })();
+
+(function dropdownNav() { 
+    const navTitle = document.querySelector('.menu__test--title');
+    const navParagraph = document.querySelector('.menu__test--p');
+    if (navTitle) {
+        navTitle.addEventListener('click', () => {
+            navParagraph.classList.toggle('show--p');
+        });
+    }
+})();
+
+// dropdown();
