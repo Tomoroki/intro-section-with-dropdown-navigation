@@ -1,6 +1,6 @@
 
 (function () {
-    const navMenu = document.querySelector('.menu__list');
+    const navMenu = document.querySelector('.menu__items');
     const navToggle = document.querySelector('.menu__hamburger');
     const navClose = document.querySelector('.menu__close');
 

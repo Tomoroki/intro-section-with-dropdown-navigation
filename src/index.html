@@ -20,41 +20,69 @@
 
             <img src="./assets/logo.svg" alt="Logo">
 
-            <div class="nav__menu">
+            <div class="menu__items">
                 <ul class="menu__list">
 
-                    <p class="menu__close">X</p>
+                    <img class="menu__close" src="./assets/icon-close-menu.svg" alt="close menu">
 
                     <li class="menu__item">
                         <details>
                             <summary>
                                 Features
                             </summary>
+
                             <a href="#home" class="menu__link active-link">
-                                <i class='bx bx-home menu__icon'></i>Todo List</a>
+                                <picture>
+                                    <img src="./assets/icon-todo.svg" alt="" class="menu__icon">
+                                </picture>
+                                Todo List
+                            </a>
+
+                            <a href="#home" class="menu__link active-link">
+                                <picture>
+                                    <img src="./assets/icon-calendar.svg" alt="" class="menu__icon">
+                                </picture>
+                                Calendar
+                            </a>
+
+                            <a href="#home" class="menu__link active-link">
+                                <picture>
+                                    <img src="./assets/icon-reminders.svg" alt="" class="menu__icon">
+                                </picture>
+                                Reminders
+                            </a>
+
+                            <a href="#home" class="menu__link active-link">
+                                <picture>
+                                    <img src="./assets/icon-planning.svg" alt="" class="menu__icon">
+                                </picture>
+                                Planning
+                            </a>
                         </details>
+
                         <details>
                             <summary>
                                 Company
                             </summary>
-                            <a href="#home" class="menu__link active-link">
-                                <i class='bx bx-home menu__icon'></i>Todo List</a>
+
+                            <a href="#home" class="menu__link active-link">History</a>
+                            <a href="#home" class="menu__link active-link">Our Team</a>
+                            <a href="#home" class="menu__link active-link">Blog</a>
                         </details>
 
                         <a href="#home" class="menu__link active-link">Careers</a>
                         <a href="#home" class="menu__link active-link">About</a>
                     </li>
 
-                    <form action="#">
-                        <button>Login</button>
-                        <button>Register</button>
+                    <form action="#" class="menu__form">
+                        <button class="btn btn__login">Login</button>
+                        <button class="btn btn__signup">Register</button>
                     </form>
                 </ul>
-
             </div>
 
             <div class="menu__hamburger">
-                <img src="./assets/icon-menu.svg" alt="Hamburger Menu">
+                <img src="./assets/icon-menu.svg" alt="">
             </div>
 
         </section>
@@ -63,8 +91,8 @@
     <main class="main">
 
         <picture class="main__hero">
-            <source media="(max-width: 799px)" srcset="./assets/image-hero-mobile.png">
-            <source media="(min-width: 800px)" srcset="./assets/image-hero-desktop.png">
+            <source media="(max-width: 1023px)" srcset="./assets/image-hero-mobile.png">
+            <source media="(min-width: 1024px)" srcset="./assets/image-hero-desktop.png">
             <img src="./assets/image-hero-mobile.png" alt="Hero mobile">
         </picture>
 
