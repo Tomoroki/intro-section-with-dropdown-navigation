@@ -23,19 +23,34 @@
     function linkAction() {
         navMenu.classList.remove('menu__links--show');
     }
-    navLinks.forEach((link) => {
+    navLinks.forEach(link => {
+        link.addEventListener('click', linkAction);
+    });
+    const itemLink = document.querySelectorAll('.menu__item--link');
+    function linkAction() {
+        navMenu.classList.remove('menu__links--show');
+    }
+    itemLink.forEach(link => {
         link.addEventListener('click', linkAction);
     });
 })();
 
 (function dropdownNav() { 
-    const navTitle = document.querySelector('.menu__test--title');
-    const navParagraph = document.querySelector('.menu__test--p');
-    if (navTitle) {
-        navTitle.addEventListener('click', () => {
-            navParagraph.classList.toggle('show--p');
-        });
-    }
+    const navFeatures = document.querySelector('.features');
+    const navCompany = document.querySelector('.company');
+    const dropFeatures = document.querySelector('.dropdown__features');
+    const dropCompany = document.querySelector('.dropdown__company');
+    const featuresA = document.querySelector('.features--a');
+    const companyA = document.querySelector('.company--a');
+    
+    dropFeatures.addEventListener('click', () => {
+        navFeatures.classList.toggle('show');
+        featuresA.classList.toggle('show--p');
+    });
+    dropCompany.addEventListener('click', () => {
+        navCompany.classList.toggle('show');
+        companyA.classList.toggle('show--p');
+    });
 })();
 
 // dropdown();
