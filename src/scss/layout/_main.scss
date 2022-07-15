@@ -112,16 +112,24 @@
     &--link {
         margin: 0;
         font-weight: 500;
+        &:hover a {
+            color: black;
+        }
         a {
-            &:visited {
-                color: black;
-            }
+            color: $almostGray;
+            // &:visited {
+            //     color: black;
+            // }
         }
     }
 }
 
 .menu__dropdown {
+    &:hover .menu__dropdown--title {
+        color: #000000;
+    }
     &--title {
+        color: $almostGray;
         font-weight: 500;
         margin: 0;
         &::after {
@@ -212,15 +220,22 @@
     }
     .btn {
         width: 100%;
+        color: $almostGray;
         padding: 1rem 2rem; 
         border-radius: 1.5rem;
         margin-bottom: 1rem;
+        &:hover {
+            color: black;
+        }
         @include desktop {
             margin: 0.5rem;
         }
     }
     .btn__signup {
-        border: 2px solid black;
+        border: 2px solid $almostGray;
+        &:hover {
+            border: 2px solid black;
+        }
     }
 }
 
@@ -251,6 +266,7 @@
     @include desktop {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
         width: 80%;
         margin: 12rem auto 4rem;
     }
@@ -290,6 +306,18 @@
             color: $almostWhite;
             padding: 1.5rem 2.5rem;
             border-radius: 1.5rem;
+            @include desktop {
+                align-self: flex-start;
+                padding-left: 3rem;
+                height: 6rem;
+                width: 17rem;
+                &:hover {
+                    background-color: $almostWhite;
+                    color: $almostBlack;
+                    border: 2px solid $almostBlack;
+                    font-weight: 700;
+                }
+            }
         }
         &--footer {
             width: 100%;
@@ -299,6 +327,9 @@
             margin-top: 5rem;
             img {
                 width: 7rem;
+            }
+            @include desktop {
+                margin-top: 11rem;
             }
         }
         @include desktop {
