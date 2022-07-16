@@ -1,23 +1,18 @@
 
 (function () {
-    const navMenu = document.querySelector('.menu__items');
     const navToggle = document.querySelector('.menu__hamburger');
-    const navClose = document.querySelector('.menu__close');
+    const navMenu = document.querySelector('.menu__items');
 
     // MENU SHOW
     // Validade if constant exists
+    
     if (navToggle) {
         navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('menu__links--show');
+            navToggle.classList.toggle("is-active");
         });
     };
-    // MENU HIDDEN
-    // Validade if constant exists
-    if (navClose) {
-        navClose.addEventListener('click', () => {
-            navMenu.classList.remove('menu__links--show');
-        });
-    }
+    
     // REMOVE MENU MOBILE
     const navLinks = document.querySelectorAll('.menu__link');
     function linkAction() {
@@ -25,15 +20,23 @@
     }
     navLinks.forEach(link => {
         link.addEventListener('click', linkAction);
+        link.addEventListener("click", () => {
+            navToggle.classList.remove("is-active");
+        });
     });
+
     const itemLink = document.querySelectorAll('.menu__item--link');
     function linkAction() {
         navMenu.classList.remove('menu__links--show');
     }
     itemLink.forEach(link => {
         link.addEventListener('click', linkAction);
+        link.addEventListener("click", () => {
+            navToggle.classList.remove("is-active");
+        });
     });
 })();
+
 
 (function dropdownNav() { 
     const navFeatures = document.querySelector('.features');
