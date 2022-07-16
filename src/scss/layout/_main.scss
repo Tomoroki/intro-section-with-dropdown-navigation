@@ -1,4 +1,4 @@
-// codigo aquí
+
 /* NAV */
 
 .menu {
@@ -11,11 +11,6 @@
     z-index: 100;
     background-color: $almostWhite;
 }
-
-.scroll-header {
-    box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
@@ -25,7 +20,6 @@
         justify-content: start;
     }
 }
-
 .menu__logo {
     color: #242329;
     font-size: 1.5rem;
@@ -36,14 +30,6 @@
     align-items: center;
     justify-content: flex-start;
 }
-
-
-
-.menu__btns {
-    display: flex;
-    align-items: center;
-}
-
 .menu__hamburger {
     color: #242329;
     cursor: pointer;
@@ -108,9 +94,6 @@
             width: inherit;
             justify-content: space-between;
         }
-        img {
-            max-width: 7rem;
-        }
     }
     @include desktop {
         position: inherit;
@@ -140,9 +123,6 @@
         }
         a {
             color: $almostGray;
-            // &:visited {
-            //     color: black;
-            // }
         }
     }
 }
@@ -184,8 +164,6 @@
     
             &:hover {
                 background-color: rgba(236, 236, 236, 0.788);
-                border-radius: 0;
-                color: var(--azul-principal);
             }
         }
     }
@@ -219,9 +197,9 @@
             border-radius: 1.5rem;
             background-color: $almostWhite;
             width: max-content;
-            -webkit-box-shadow: 0px 0px 72px -3px rgba(0, 0, 0, 0.33);
-                -moz-box-shadow: 0px 0px 72px -3px rgba(0, 0, 0, 0.33);
-                box-shadow: 0px 0px 72px -3px rgba(0, 0, 0, 0.33);
+            -webkit-box-shadow: 0px 4px 80px -20px rgba(0, 0, 0, 0.33);
+                -moz-box-shadow: 0px 4px 80px -20px rgba(0, 0, 0, 0.33);
+                box-shadow: 0px 4px 80px -20px rgba(0, 0, 0, 0.33);
         }
         .features--a {
             right: 0;
@@ -263,27 +241,13 @@
 }
 
 
-
-.menu__close {
-    position: absolute;
-    top: 2.3rem;
-    right: 2.3rem;
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: var(--first-color);
-}
-
-.menu__close:hover {
-    color: var(--azul-principal);
-}
-
 /* Show Menu */
 
 .menu__links--show {
     right: 0;
 }
 
-//Main
+/* MAIN */
 .main {
     margin-top: 10rem;
     @include desktop {
@@ -301,6 +265,7 @@
             max-width: 50rem;
             @include desktop {
                 width: 100%;
+                height: max-content;
             }
         }
         @include desktop {
@@ -350,6 +315,7 @@
             margin-top: 5rem;
             img {
                 width: 7rem;
+                height: max-content;
             }
             @include desktop {
                 margin-top: 11rem;
@@ -373,7 +339,7 @@
     }
 }
 
-// Footer
+/* FOOTER */
 .attribution {
     margin-top: 2rem;
     font-size: 1.4rem;

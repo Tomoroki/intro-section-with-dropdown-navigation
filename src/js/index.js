@@ -13,7 +13,7 @@
         });
     };
     
-    // REMOVE MENU MOBILE
+    // REMOVE MENU MOBILE ON MENU__LINK
     const navLinks = document.querySelectorAll('.menu__link');
     function linkAction() {
         navMenu.classList.remove('menu__links--show');
@@ -24,12 +24,23 @@
             navToggle.classList.remove("is-active");
         });
     });
-
+    // REMOVE MENU MOBILE ON MENU__ITEM--LINK
     const itemLink = document.querySelectorAll('.menu__item--link');
     function linkAction() {
         navMenu.classList.remove('menu__links--show');
     }
     itemLink.forEach(link => {
+        link.addEventListener('click', linkAction);
+        link.addEventListener("click", () => {
+            navToggle.classList.remove("is-active");
+        });
+    });
+    // REMOVE MENU MOBILE ON MENU__FORM
+    const menuForm = document.querySelectorAll('.menu__form');
+    function linkAction() {
+        navMenu.classList.remove('menu__links--show');
+    }
+    menuForm.forEach(link => {
         link.addEventListener('click', linkAction);
         link.addEventListener("click", () => {
             navToggle.classList.remove("is-active");
@@ -53,6 +64,18 @@
     dropCompany.addEventListener('click', () => {
         navCompany.classList.toggle('show');
         companyA.classList.toggle('show--p');
+    });
+    const navLinks = document.querySelectorAll('.menu__link');
+    function linkAction() {
+        companyA.classList.remove('show--p');
+        featuresA.classList.remove('show--p');
+    }
+    navLinks.forEach(link => {
+        link.addEventListener('click', linkAction);
+        link.addEventListener("click", () => {
+            navFeatures.classList.remove("show");
+            navCompany.classList.remove("show");
+        });
     });
 })();
 
